@@ -8,7 +8,7 @@ def click():
 
 def build():
     bt = Button(text="Clique aqui")
-    bt.on_press = click
+    bt.on_press = click()
     return bt
 
 
