@@ -5,8 +5,7 @@ from kivy.uix.label import Label
 
 class Hello(App):
 
-    def build(self):
-        return Label(text="Ola Mundo")
+    pass
 
 
 Hello().run()
