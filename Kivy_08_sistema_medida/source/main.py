@@ -4,3 +4,4 @@
 #DENSIDADE DA TELA = largura da tela em pixel / largura da tela em polegadas
 #DP = largura em pixel * 160 / densidade da tela
 #SP = escala independente de pixel
+cd 
