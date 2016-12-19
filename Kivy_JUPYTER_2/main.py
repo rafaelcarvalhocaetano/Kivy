@@ -27,4 +27,4 @@ bt.text = ""
 def bt_click():
     print("Rafael")
 
-bt.on_press = bt_click
+bt.on_press = bt_click()
