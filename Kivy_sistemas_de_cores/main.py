@@ -17,13 +17,16 @@ ji = InteractiveLauncher(janela)
 ji.run()
 
 kvcode = """
-#: import C kivy.utils.get_color_from_hex
+#:import C kivy.utils.get_color_from_hex
+
+
 FloatLayout:
     Button:
         size_hint: .3, .3
         pos_hint:{"center_x": .5, "center_y": .5}
-        background_color:C("#FFFFFF)
-        background_normal: ""
+        background_color: C("#FFFFFF")
+        background_normal:""
+
 """
 if(janela.root):
     janela.root_window.remove_widget(janela.root)
@@ -33,8 +36,10 @@ if(janela.root):
 janela.root = glayout = Builder.load_string(kvcode)
 janela.root_window.add_widget(glayout)
 
+
+from kivy.utils import get_color_from_hex
+get_color_from_hex("#FFFFFF")
 glayout.add_widget(Button(text="X", size_hint=(.33, .1)))
 #ALTERANDO A ORIENTAÇÂO
 glayout.orientation = "rl-bt"
 
-from kivy.utils import get_color_from_hex
