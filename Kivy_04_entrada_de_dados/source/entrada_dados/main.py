@@ -5,8 +5,6 @@ from kivy.uix.textinput import TextInput
 
 def build():
     return TextInput(text="Shell >>")
-
-
 janela = App()
 janela.build = build
 janela.run()
